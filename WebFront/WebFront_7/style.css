@@ -1,0 +1,142 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+  }
+  /*a{
+    text-decoration: none;
+  }
+  li{
+    text-decoration: none;
+    list-style: none; 
+  }*/
+  body{
+  font-family: 'Raleway', sans-serif;
+  background: #edf9fa;
+  }
+  
+.logo{
+    background: #000;
+    display:flex;
+    text-align: center;
+   
+  }
+  .graficlogo{
+      padding: 5px;
+      max-width: 100%;
+      box-sizing: border-box;
+  }
+footer{
+      width: 100%;
+      height: auto;
+      background-color: #000000;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 25px;
+  }
+  footer a{
+      color: #f7f7f7;
+      font-size: 14px;
+      margin-left: 10px;
+  }
+  footer nav a:hover{
+      border-bottom: 1px solid #f7f7f7;
+  }
+  footer p{
+      color: #f7f7f7;
+  }
+  nav{
+      margin: 5px auto;
+      width: 750px;
+      height: 70px;
+  }
+  header p{
+      margin-top: 50px;
+      color: #0077ff;
+  }
+ 
+.social img{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.social img:hover{
+    background: #ffffff;
+    border-radius: 50%;
+}
+.topnav{
+      background-color: #e9e6e6;
+      font-size: 50px;
+      margin-top: 1px;
+  }
+
+.topnav a{
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 15px; 
+}
+.topnav a:hover{
+    border-bottom: 2px solid #000;
+}
+table{
+    text-align: left;
+    border-spacing: 5px;
+    background-color: #567dfc;
+    border: 5px solid  #4b68fa;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+th{
+    border: 3px solid #4b68fa;
+    padding: 10px;
+  }
+  td{
+    border: 3px solid #4b68fa;
+    padding: 15px;
+  }
+  tr:nth-child(2n) {    
+     background-color: #ffffff;
+     }
+
+form{
+    text-align: center;
+    border-collapse: separate;
+    /*border-spacing: 5px;*/
+    background: lightgray ;
+    border: 16px solid lightgray;
+    border-radius: 20px;
+    width: 750px;
+    margin: 0 auto;
+   padding: 2px;
+}
+.links{
+    border: 16px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #1d1111;
+   /* border-radius: 15px;*/
+   background: #bceef5;
+   width: 750px;
+   margin: 0 auto;
+ padding: 50px;
+    
+  }
+  li {
+    color:#1d1111;
+    text-align: start;
+  }
+  li:hover {
+    font-weight: bolder;
+   
+  }
+  a{
+    color:#1d1111;
+    text-decoration: none;
+  }
+  a:hover{
+  font-weight: bold;
+  }

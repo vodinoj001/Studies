@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>MySite</title>
+		<meta charset="UTF-8">
+		<title>KtifPMI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href = "style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+
+			<div class="logo">
+				<a href = "index.html"> <img class="graficlogo" src="logo.png" width="115" height="115" alt="Logo"> </a>
+				<p>Euronews</p>
+			</div>
+			<nav>
+				<div class="topnav" id="myTopnav">
+				<a href="https://ru.euronews.com/">ГЛАВНАЯ</a>
+				<a href="https://ru.euronews.com/news/international">МИР</a> 
+				<a href="https://ru.euronews.com/news/business">БИЗНЕС</a>
+				<a href="https://ru.euronews.com/news/sport">СПОРТ</a> 
+				<a href="https://ru.euronews.com/lifestyle/culture">КУЛЬТУРА</a> 
+				<a href="https://ru.euronews.com/travel">ПУТЕШЕСТВИЯ</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+		<div class="links">
+			<ol>
+				<li><a href="http://moodle.kubsu.ru/">example.com</a></li>
+				<li><a href="https://moodle.kubsu.ru/">example.comc с протоколом https</a></li>
+				<li><a href = "ftp://ivanov:123456@ftp.anyhost.ru/">Ссылка на файл на сервере FTP без авторизации</a></li>
+				<li><a href = ""ftp://example:1234@example.com/exec.txt"">C авторизацией</a></li>
+				<li><a id = "anchor" href = "https://moodle.kubsu.ru/course/view.php?id=780#anchor">Cсылка на фрагмент страницы некоторого сайта</a></li>
+				<li><a id = "top" href = "#top">Наверх</a></li> 
+				<li><a href = "https://www.google.com/webhp?hl=ru&sa=X">Cсылка с двумя параметрами в URL</a></li>
+				<li><a href = "https://moodle.kubsu.ru/" title = "Главное меню">https://moodle.kubsu.ru/ </a><br>
+					<a href = "https://moodle.kubsu.ru/course/index.php?categoryid=12" title = "Факультет Компьютерных технологий и прикладной математики">https://moodle.kubsu.ru/course/index.php?categoryid=12</a><br>
+					<a href = "https://moodle.kubsu.ru/course/view.php?id=780" title = "Разработка пользовательского Web-интерфейса">https://moodle.kubsu.ru/course/view.php?id=780</a></li>
+				<li><a title="без href">без href</a></li>
+				<li><a href = ""> Ссылка с пустым href</a></li>
+				<li><a href="https://example.com/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+				<li><a href="http://example.com/"><noindex>Ссылка, запрещенная для индексации поисковиками</noindex></a></li>
+				<li><p>В Новой Зеландии нашли окаменелости гигантского длинноногого пингвина<a href = https://nauka.tass.ru/nauka/12422931> Journal of Vertebrate Paleontology.</a></li>
+				<li><a href = "https://ru.euronews.com/"><img src = "image.jpg" width="200"></a></li>
+				<li><img src="2640804.jpg"width="200" usemap="#figure">
+				<map name="figure">
+					<area shape ="rect" coords= "25,25,125,125" href="https://en.wikipedia.org/wiki/Circle">
+					<area shape= "circle" coords = "150,75,50" href="https://en.wikipedia.org/wiki/Square">
+				</map>
+				</li>
+				<li><a href="/about">Относительная ссылка на страницу в текущем каталоге</a></li>
+				<li><a href="/about/contacts">  Относительная ссылка в каталоге about  </a> </li>
+				<li><a href="../page.html">  Относительная в каталоге уровнем выше текущего  </a></li>
+				<li><a href="../../page.html">  Относительная в каталоге уровнем выше текущего  </a></li>
+				<li><a href="https://vk.cc/c5SIn1">Сокращенная ссылка на главную страницу moodle.kubsu.ru</a></li>
+				<li><a href="https://vk.cc/c5SIoy">Сокращенная ссылка на внутреннюю страницу moodle.kubsu.ru</a></li>	
+			</ol>
+		</div>
+		<div>
+      <table>
+        <tr>
+          <th>Заголовок 1</th>
+          <th>Заголовок 2</th>
+          <th>Заголовок 3</th>
+        </tr>
+        <tr>
+          <td>1.1</td>
+          <td>1.2</td>
+          <td rowspan="2">Строка 1,2</td>
+        </tr>
+        <tr>
+          <td>2.1</td>
+          <td>2.2</td>
+        </tr>
+        <tr>
+          <td colspan="2">Столбец 1,2</td>
+          <td>2.5</td>
+        </tr>
+        <tr>
+          <td>4.1</td>
+          <td>4.2</td>
+          <td>4.3</td>
+        </tr>
+        <tr>
+          <td>5.1</td>
+          <td>5.2</td>
+          <td>5.3</td>
+        </tr>
+      </table>
+     </div>
+	 <form action="/"method="POST">
+		<label>Введите имя:<br /><input name="field-name-1"value="" /></label><br />
+		<label>Текстовое поле email:<br /><input name="field-email"value=""type="email" /></label><br />
+		<label>Дата рождения:<br /><input name="field-date"value="07.01.2002"type="date" />
+		</label><br />Пол : <br />
+		<label><input type="radio" checked="checked"name="radio-group-1" value="Значение1" />Мужской</label>
+		<label><input type="radio"name="radio-group-1" value="Значение2" />Женский</label><br />
+		Количество конечностей : <br />
+		<label><input type="radio" checked="checked"name="radio-group-2" value="Значение1" />4</label>
+		<label><input type="radio"name="radio-group-2" value="Значение2" />6</label><br />
+		<label>
+		<label>
+        Сверхспособности :<br />
+        <select name="field-name-4[]"multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+          <option value="Значение3" selected="selected">Левитация</option>
+        </select>
+      </label><br />
+		<label>
+        Биография :<br /><textarea name="field-name-2">:)</textarea>
+      </label><br />
+      С контрактом ознакомлен(а) :<br />
+      <label><input type="checkbox" checked="checked"name="check-1" />
+         </label><br />
+      <input type="submit" value="Отправить" />
+	 </form>
+	  </main>
+	 
+	 <div class="container mt-4 mainBorder order-3 order-sm-3 order-md3 py-md-5 px-md-5 text-center">
+      <h2 class="col text-center">Калькулятор</h2>
+      <form class="calc">
+        <div class="form-row"> 
+          <div class="col-md-2"></div>
+          <div class=" col-sm-12 col-md-4 mt-sm-3 mt-md-auto">
+          <label class="mt-3" id="inputPrice" >Цена</label>
+          <input class="form-control" onkeyup="checkParams()" id="price" type="text" name="field-name" placeholder="Введите цену товара:" autocomplete="off" >
+          </div>
+          <div class="col-sm-12 col-md-4 ">
+          <label class="mt-3" id="inputCount" >Количество</label>
+          <input class="form-control" onkeyup="checkParams()" id="n" type="text" name="field-name" placeholder="Введите кол-во товаров:" autocomplete="off" >
+          </div>
+        </div>
+        <div class="container col-9 mt-4">
+          <button class="form-control btn active" type="button" id="submit" onclick="calc()">Посчитать</button>
+          <div class="container row mt-2"> 
+            <div class="col-5"></div>
+            <h2 class="resultCalc">Результат: </h2>
+            <h2 class="resultCalc" id="result"> 0</h2>
+          </div>
+        </div>
+       </form> 
+      </div>
+
+      <div class="container mb-3 text-center" id="hard_calc">
+        <label>
+            Количество товаров:
+            <br/>
+            <input id="quantity" type="text" name="quantity-name" placeholder="Введите количество товаров">
+        </label>
+        <br />
+        <div id="prodPrice">Выберите тип товара</div>
+            Тип товара:
+            <form id="new_form">
+            <select name="prodType" >
+                <option value="1">Мопед(до 50 куб.м)</option>
+                <option value="2">Мотоцикл</option>
+                <option value="3">Квадроцикл</option>
+            </select>
+            <div id="radios">
+                <label><input type="radio" name="prodOptions" value="option1">125куб.м</label>
+                <label><input type="radio" name="prodOptions" value="option2">250куб.м</label>
+                <label><input type="radio" name="prodOptions" value="option3">600куб.м</label>
+            </div>
+            <div id="checkboxes">
+                <label><input type="checkbox" name="prop1">Лебедка</label>
+                <label><input type="checkbox" name="prop2">Амортизаторы Канада</label>
+            </div>
+        </form>
+    </div>
+	
+	 <footer>
+		<div class="container-fluid mt-3">
+			<div class="row" id="my_footer">
+				<div class="col mt-3 justify-content text-center">
+					<p>TELNOV</p>
+				</div>
+			</div>
+		</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script src="calc1.js"></script>
+		<script src="calc2.js"></script>
+	</body>
+</html>

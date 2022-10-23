@@ -1,0 +1,46 @@
+﻿html {
+    font-size: 10px;
+}
+
+header h1 {
+    font-size: 32pt;
+}
+
+header, nav, #list, #table, #form, footer {
+    background-color: #ccc;
+}
+
+nav {
+    font-size: 28pt;
+}
+
+
+#list {
+    font-size: 18pt;
+}
+
+
+table th {
+    background-color: #99f;
+}
+
+.nch {
+    background-color: #999;
+}
+
+.ch {
+    background-color: #eee;
+}
+
+table th, table td {
+    font-size: 16pt;
+}
+
+footer {
+    font-size: 16pt;
+}
+
+
+
+@media screen and (min-width: 800px) {
+}

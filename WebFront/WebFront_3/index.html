@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="ru" >
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+
+  <header>
+      <div>
+        <img src="logo.png" alt="Лого название сайта">
+        <h1>EuroNews</h1>
+      </div>
+  </header>
+
+  <nav>
+  	<a href="#list">Список гиперсылок </a>
+  	<a href="#table">Таблица </a>
+  	<a href="#form">Форма </a>
+  </nav>
+  <div id="content">
+    <div id="list">
+  	  <ol>
+				<li><a href="http://moodle.kubsu.ru/">example.com</a></li>
+				<li><a href="https://moodle.kubsu.ru/">example.comc с протоколом https</a></li>
+				<li><a href = "ftp://ivanov:123456@ftp.anyhost.ru/">Ссылка на файл на сервере FTP без авторизации</a></li>
+				<li><a href = ""ftp://example:1234@example.com/exec.txt"">C авторизацией</a></li>
+				<li><a id = "anchor" href = "https://moodle.kubsu.ru/course/view.php?id=780#anchor">Cсылка на фрагмент страницы некоторого сайта</a></li>
+				<li><a id = "top" href = "#top">Наверх</a></li> 
+				<li><a href = "https://www.google.com/webhp?hl=ru&sa=X">Cсылка с двумя параметрами в URL</a></li>
+				<li><a href = "https://moodle.kubsu.ru/" title = "Главное меню">https://moodle.kubsu.ru/ </a><br>
+					<a href = "https://moodle.kubsu.ru/course/index.php?categoryid=12" title = "Факультет Компьютерных технологий и прикладной математики">https://moodle.kubsu.ru/course/index.php?categoryid=12</a><br>
+					<a href = "https://moodle.kubsu.ru/course/view.php?id=780" title = "Разработка пользовательского Web-интерфейса">https://moodle.kubsu.ru/course/view.php?id=780</a></li>
+				<li><a title="без href">без href</a></li>
+				<li><a href = ""> Ссылка с пустым href</a></li>
+				<li><a href="https://example.com/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+				<li><a href="http://example.com/"><noindex>Ссылка, запрещенная для индексации поисковиками</noindex></a></li>
+				<li><p>В Новой Зеландии нашли окаменелости гигантского длинноногого пингвина<a href = https://nauka.tass.ru/nauka/12422931> Journal of Vertebrate Paleontology.</a></li>
+				<li><a href = "https://ru.euronews.com/"><img src = "image.jpg" width="200"></a></li>
+				<li><img src="2640804.jpg"width="200" usemap="#figure">
+				<map name="figure">
+					<area shape ="rect" coords= "25,25,125,125" href="https://en.wikipedia.org/wiki/Circle">
+					<area shape= "circle" coords = "150,75,50" href="https://en.wikipedia.org/wiki/Square">
+				</map>
+				</li>
+				<li><a href="/about">Относительная ссылка на страницу в текущем каталоге</a></li>
+				<li><a href="/about/contacts">  Относительная ссылка в каталоге about  </a> </li>
+				<li><a href="../page.html">  Относительная в каталоге уровнем выше текущего  </a></li>
+				<li><a href="../../page.html">  Относительная в каталоге уровнем выше текущего  </a></li>
+				<li><a href="https://vk.cc/c5SIn1">Сокращенная ссылка на главную страницу moodle.kubsu.ru</a></li>
+				<li><a href="https://vk.cc/c5SIoy">Сокращенная ссылка на внутреннюю страницу moodle.kubsu.ru</a></li>	
+			</ol>
+    </div>
+  
+
+    <div id="table">
+    <table>
+        <tr>
+          <th>Колонка 1</th>
+          <th>Колонка 2</th>
+          <th>Колонка 3</th>
+        </tr>
+        <tr class="nch">
+          <td>Ячейка 11</td>
+          <td>Ячейка 12</td>
+          <td>Ячейка 13</td>
+        </tr>
+        <tr class="ch">
+          <td>Ячейка 21</td>
+          <td colspan="2">Ячейка 22 объединенная с 23</td>
+        </tr>
+        <tr class="nch">
+          <td>Ячейка 31</td>
+          <td>Ячейка 32</td>
+          <td>Ячейка 33</td>
+        </tr>
+        <tr class="ch">
+          <td>Ячейка 41</td>
+          <td>Ячейка 42</td>
+          <td>Ячейка 43</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="nch">Ячейка 51 объединенная с 52 и 53</td>
+        </tr>
+    </table>
+
+
+
+
+
+    </div>
+
+
+    <div id="form">
+      <form action="/"
+        method="POST">
+
+        <label>
+        Имя:<br />
+          <input name="field-name-1"/>
+        </label><br />
+
+        <label>
+          Email:<br />
+          <input name="field-email"
+            type="email" />
+        </label><br />
+
+        <label>
+          Дата рождения:<br />
+          <input name="field-date"
+            value="ГГГГ-ММ-ЧЧ"
+            type="date" />
+        </label><br />
+
+        Пол:<br />
+        <label><input type="radio" checked="checked"
+          name="radio-group-1" value="Значение1" />
+          М</label>
+        <label><input type="radio"
+          name="radio-group-1" value="Значение2" />
+          Ж</label><br />
+
+
+          Количество конечностей:<br />
+        <label><input type="radio" checked="checked"
+          name="radio-group-2" value="Значение1" />
+          1</label>
+        <label><input type="radio"
+          name="radio-group-2" value="Значение2" />
+          2</label><br />
+        <label><input type="radio"
+          name="radio-group-2" value="Значение3" />
+          3</label><br />
+        <label><input type="radio"
+          name="radio-group-2" value="Значение4" />
+          4</label><br />     
+
+        <label>
+          Сверхспособности:
+          <br />
+          <select name="field-name-4[]"
+            multiple="multiple">
+            <option value="Значение1">Бессмертие</option>
+            <option value="Значение2" selected="selected">Прохождение сквозь стены </option>
+            <option value="Значение3" selected="selected">Левитация </option>
+          </select>
+        </label><br />
+
+         <label>
+          Биография:<br />
+          <textarea name="field-name-2">начальное значение</textarea>
+        </label><br />
+
+        С контрактом ознакомлен (а)<br />
+        <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        Подпись чекбокса ставим справа</label><br />
+
+        <input type="submit" value="Отправить" />
+      </form>
+    </div>
+
+  </div>
+
+
+  <footer>
+  	Telnov
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset='utf-8'/>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+        <title>Задание 8</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <link rel="stylesheet" type="text/css" href="8.css"/>
+        <script src='8.js' defer></script>
+    </head>
+    <body>
+    <button id="showbutton"> Отправить форму </button>
+    <div id="wrapper">
+            <div class="modalcontent">
+            <span id="close"> х </span>
+            <form id="contact" name="contact" method="POST" accept-charset="UTF-8">
+                <label>
+                    Имя: <br/>
+                    <input id="field1" type="text" name="name" class="fields"/>
+                </label> 
+                <br/>  
+                <label>
+                    Email:<br />
+                    <input name="field-email" value="test@example.com" type="email" class="fields"/>
+                </label>
+                <br />
+                <label>
+                    Сообщение:<br/>
+                    <textarea name="fieldmessage" class="fields"></textarea>
+                </label> 
+                <br/>
+                <label>
+                    <input name="check" type="checkbox" class="fields"/>
+                    Я даю согласие на обработку моих персональных данных
+                </label> 
+                <br/>
+                <input type="submit" name="subbutton" id="submitbutton" disabled/> 
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
